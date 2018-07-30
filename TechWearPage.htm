@@ -1,0 +1,134 @@
+<!DOCTYPE html5>
+<html>
+<head>
+      <title>TechWearClothing</title>
+      <link rel="stylesheet" type="text/css" href="TechWear.css">
+       <meta charset="utf-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+
+
+    <Style>
+    .jumbotron{
+      color: black;
+      background-color: (221,221,221, 0.7);
+    }
+    </Style>
+</head>
+<body class="body">
+<div class="container">
+  <div id"theCarousel" class="carousel slide"     data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target= "#theCarousel" data-slide-to="0" class="active"></li>
+      <li data-target= "#theCarousel" data-slide-to="1"></li>
+      <li data-target= "#theCarousel" data-slide-to="2" ></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="slide1"></div>
+        <div class="carousel-caption">
+          <h1>Faschun</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-inner">
+      <div class="slide2"></div>
+      <div class="carousel-caption">
+        <h1>Faschun</h1>
+    </div>
+</div>
+<div class="carousel-inner">
+    <div class="slide3"></div>
+    <div class="carousel-caption">
+      <h1>Faschun</h1>
+  </div>
+</div>
+
+<a class="left carousel-control" href="#theCarousel" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left"></span>
+
+<a class="right carousel-control" href="#theCarousel" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right"></span>
+
+</div>
+
+  <div class="page-header">
+    <h1 id="title">TechWear Clothing</h1>
+  </div>
+  <div class="links-container">
+    <h3 id="brands"><a href = "#Brands">Brands</a></h3>
+    <h3 id="influences"><a href= "#Influences">Influences</a></h3>
+    <h3 id="styles"><a href= "#Styles">Styles</a></h3>
+  </div>
+  <div class="heading">
+    <h2 id= "heading">What is techwear?</h2>
+    <hr>
+  </div>
+  <div class="home-2">
+    <img class="side-photos" src= "https://i.imgur.com/XFzTH3I.jpg">
+    <div class="jumbotron">
+    <p>The future is matte.
+
+Born out of the unlikely crossover between fashion and the outdoors industry, urban techwear (or “techwear”, for short) is an emerging style that blends form with a relentless focus on function. While the athleisure style often straddles the line between aesthetics and utility, techwear chooses to ignore the line altogether: in our technology-enabled future, why couldn’t someone have both?
+    </p>
+    </div>
+  <img class="side-photos" src = "https://i.imgur.com/y615G5G.jpg">
+  </div>
+  <div class="brands-icons">
+    <img class="interactive-brands" type="b" src="img/Nike.png" alt="Nike logo"></img>
+    <img class="interactive-brands" src="img/RiotDivision.jpg" alt="RiotDivision log"></img>
+    <img class="interactive-brands" src="img/TheNorthFace.jpg" alt="The NorthFace logo"></img>
+    <img class="interactive-brands" src="img/Acronym.png" alt="Acronym logo"></img>
+  </div>
+
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+
+
+<script src="boostrap/bootstrap.min.js"></script>
+
+  <script src="Jquery/glitch.jquery.js"></script>
+    <!--JQUERY Glitch IMPORTS-->
+
+  <script src="Jquery/jquery.textillate.js"></script>
+
+
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+  $("#title").glitch({bg: '#35493D' , minint:1, maxint:3, maxglitch:15, hoffset:10, voffset:3, direction:'random'});
+  $("#heading").glitch({bg: '#black' , minint:1, maxint:3, maxglitch:15, hoffset:10, voffset:3, direction:'random'});
+});
+
+$("#influences").hover(function(){
+  $(this).glitch({bg: '#35493D' , minint:1, maxint:3, maxglitch:15, hoffset:10, voffset:3, direction:'random'});
+});
+
+$("#styles").hover(function(){
+  $("#styles").glitch({bg: '#35493D' , minint:3, maxint:1, maxglitch:4, hoffset:10, voffset:3, direction:'random'});
+});
+
+$("#brands").hover(function(){
+  $("#brands").glitch({bg: '#35493D' , minint:3, maxint:1, maxglitch:15, hoffset:10, voffset:3, direction:'random'});
+});
+
+
+
+    </script>
+  </body>
+</html>
