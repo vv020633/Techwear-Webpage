@@ -1,32 +1,35 @@
-#title{
 
-color: white;
-text-align: center !important;
-font-size: 80px;
-margin-bottom: 0%;
+@media (min-width: 600px) {
+
 }
-#heading{
-  color: white;
-  font-family: 'Russo One', sans-serif;
+#title{
+color: white;
+font-size: 80px;
+margin-bottom: 0;
+text-align: center !important;
+}
 
+.container{
+  margin: auto;
+  max-width: 800px;
 }
 .heading{
   padding-top: 100px;
   text-align: center;
+  color: white;
+  font-family: 'Russo One', sans-serif;
 }
 
-.banner{
-
-}
 .links-container {
     display: flex;
     justify-content: center;
-    float: left;
-}
-h3{
+    padding: 20px 5%;
 
-font-size: 900px;
-padding: 20px 150px;
+}
+.flexlinks{
+margin-left: 20px;
+margin-right: 20px;
+padding: 20px 20px;
 }
 
 .nav-bar a:hover{
@@ -42,19 +45,43 @@ padding: 20px 150px;
 background-color:#12160a;
 }
 .paragraph{
-  //font-family:
+
   color: white;
 }
-.home-1{
-
-
-}
-.home-2{
-display: flex;
+.flexcontainer-2{
 align-items: center;
-padding-top: 300px;
+display: flex;
 margin-bottom: 300px;
+padding-top: 300px;
 }
+
+
+ hr {
+ background-color: #35493D;
+ border: 0;
+ border-top: 1px solid #ccc;
+ display: block;
+ height: 1px;
+ margin: 1em 0;
+ padding: 0;
+}
+
+h3{
+  color: white;
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
+}
+
+h3 a{
+  color: white !important;
+  font-family: 'Russo One', sans-serif;
+  font-size:  25px;
+}
+ul {
+  list-style-type: none;
+  color: white;
+}
+
 .side-photos{
   width: 200px;
   height: auto;
@@ -63,35 +90,95 @@ margin-bottom: 300px;
   border-width: thick;
   border-color: #bbbbbb;
 }
-.container{
+.brandscontainer{
+  display: inline;
+  max-width: 100%;
+}
+.flexbox-brands{
+display: flex;
+
 
 }
- hr {
-   display: block;
- height: 1px;
- border: 0;
- border-top: 1px solid #ccc;
- margin: 1em 0;
- padding: 0;
- background-color: #35493D;
-}
-h3 a{
-  color: white !important;
-  font-size:  25px;
-  font-family: 'Russo One', sans-serif;
-}
 
-.brands-icons{
-  display: flex;
+/* flex items*/
+.interactive-brands1{
 
-}
-.interactive-brands{
-  width: 100px;
-  height: 80px;
   border-radius: 25px;
   border-style: solid;
   border-width: thick;
   border-color: #bbbbbb;
-  margin-left: 90px;
-margin-right: 90px;
+  height: 80px;
+margin-left: 40%;
+margin-right: 25%;
+  width: 100px;
+}
+.interactive-brands2{
+
+  border-radius: 25px;
+  border-style: solid;
+  border-width: thick;
+  border-color: #bbbbbb;
+  height: 80px;
+margin-left: 35%;
+margin-right: 45%;
+  width: 100px;
+}
+
+.carousel .item {
+height: 300px;
+}
+
+
+.flexcontainerbox-3{
+  flex-basis:70%;
+  font-size: 25px;
+  max-width: 10%;
+
+
+}
+.flexcontainerbox-4{
+  display: flex;
+}
+.influence-pics{
+  border-color: #35493D;
+  border-radius: 50%;
+  border-style: solid;
+  box-shadow: #35493D 0 0 5px;
+  max-width: 50%;
+  width: 100px;
+  height: auto;
+
+}
+.antwon-descr{
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  padding: 0 3% 0 3%;
+}
+.errolson-descr{
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  padding: 0 3% 0 3%;
+}
+
+.jennifer-descr{
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  padding: 0 5% 0 5%;
+}
+.caption{
+  display: block;
+  color: white;
+}
+
+footer{
+background-color: #aaaaaa;
+color: white;
+text-align: center;
+}
+.well{
+  background-color: #dddd;
+  color:black;
 }
