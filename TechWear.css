@@ -8,6 +8,10 @@ font-size: 80px;
 margin-bottom: 0;
 text-align: center !important;
 }
+#nameDisplay{
+  color: white;
+  text-align: center;
+}
 
 .container{
   margin: auto;
@@ -77,10 +81,15 @@ h3 a{
   font-family: 'Russo One', sans-serif;
   font-size:  25px;
 }
+h2{
+  color: white;
+  text-align: center;
+}
 ul {
   list-style-type: none;
   color: white;
 }
+
 
 .side-photos{
   width: 200px;
