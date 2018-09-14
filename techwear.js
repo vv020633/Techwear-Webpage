@@ -13,9 +13,16 @@ document.getElementById('nameDisplay').innerHTML = '@' + technames[randomNumber]
 
 $(document).ready(function() {
 
-  $("#hide").click(function testClick(){
-      $("#test").hide();
-  });
+  ScrollReveal().reveal('.side-photos');
+    ScrollReveal().reveal('.brand-descr');
+    ScrollReveal().reveal('.interactive-brands1');
+    ScrollReveal().reveal('.interactive-brands2');
+    ScrollReveal().reveal('.caption');
+    ScrollReveal().reveal('.heading');
+    ScrollReveal().reveal('.influence-pics');
+
+
+
 
   $("#title").glitch({bg: '#35493D' , minint:1, maxint:3, maxglitch:15, hoffset:10, voffset:3, direction:'random'});
   $("#heading").glitch({bg: '#black' , minint:1, maxint:3, maxglitch:15, hoffset:10, voffset:3, direction:'random'});

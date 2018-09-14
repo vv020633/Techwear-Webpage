@@ -59,6 +59,18 @@ margin-bottom: 300px;
 padding-top: 300px;
 }
 
+.side-photos{
+  width: 200px;
+  height: auto;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: thick;
+  border-color: #bbbbbb;
+}
+
+.side-photos.visible{
+  opacity: 1;
+}
 
  hr {
  background-color: #35493D;
@@ -91,14 +103,6 @@ ul {
 }
 
 
-.side-photos{
-  width: 200px;
-  height: auto;
-  border-radius: 25px;
-  border-style: solid;
-  border-width: thick;
-  border-color: #bbbbbb;
-}
 .brandscontainer{
   display: inline;
   max-width: 100%;
