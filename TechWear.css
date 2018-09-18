@@ -121,9 +121,10 @@ display: flex;
   border-width: thick;
   border-color: #bbbbbb;
   height: 80px;
-margin-left: 40%;
-margin-right: 25%;
+  margin-left: 40%;
+  margin-right: 25%;
   width: 100px;
+  align-content: center;
 }
 .interactive-brands2{
 
@@ -132,9 +133,10 @@ margin-right: 25%;
   border-width: thick;
   border-color: #bbbbbb;
   height: 80px;
-margin-left: 35%;
-margin-right: 45%;
+  margin-left: 35%;
+  margin-right: 45%;
   width: 100px;
+  align-content: center;
 }
 
 .carousel .item {
