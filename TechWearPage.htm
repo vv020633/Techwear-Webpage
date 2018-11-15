@@ -17,21 +17,27 @@
 
 </head>
 <body class="body">
+
+  <!--Page Container Top-->
 <div class="container">
 
   <div class="page-header">
-    <h1 id="title">TechWear Clothing</h1>
+    <h1 id="title" class="title">TechWear Clothing</h1>
   </div>
-  <div class="links-container">
-    <h3 id="brands-Heading"class="flexlinks"><a href = "#Brands">Brands</a></h3>
-    <h3 id="influences-Heading" class="flexlinks"><a href= "#Influences">Influences</a></h3>
-    <h3 id="styles-Heading" class="flexlinks"><a href= "#Styles">Styles</a></h3>
+  <!--First Flex Container-->
+  <div class="topnav">
+    <a href ="#Brands" id="brands-Heading"class="flexlinks">Brands</a>
+    <a href="#Influences" id="influences-Heading" class="flexlinks">Influences</a>
+    <a href= "#Styles" id="styles-Heading" class="flexlinks">Styles</a>
+    <a href= "" id="gallery-heading" class="flexlinks">Gallery</a>
+    <input type="text" placeholder="Search brands by price "></input>
+  </div>
 
-  </div>
   <div class="heading">
     <h2 id= "heading">What is techwear?</h2>
     <hr>
   </div>
+  <!--Second Flex Container-->
   <div class="flexcontainer-2">
     <img id ="fadeOne" class="side-photos" src= "https://i.imgur.com/XFzTH3I.jpg">
     <div class="well well-sm">
@@ -40,7 +46,7 @@
 Born out of the unlikely crossover between fashion and the outdoors industry, urban techwear (or “techwear”, for short) is an emerging style that blends form with a relentless focus on function. While the athleisure style often straddles the line between aesthetics and utility, techwear chooses to ignore the line altogether: in our technology-enabled future, why couldn’t someone have both?
     </p>
     </div>
-  <img id = "fadeTwo" class="side-photos" src = "https://i.imgur.com/y615G5G.jpg">
+  <img id = "fadeTwo" class="side-photos" src = "https://i.imgur.com/y615G5G.jpg" alt="An example of a techwear outfit created by one of the active users within the community">
   </div>
   <div id="Brands" class="brandscontainer">
 
@@ -121,25 +127,35 @@ Born out of the unlikely crossover between fashion and the outdoors industry, ur
       <h2 class = "heading">
         Techwear Instagram Name Generator
       </h2>
-      <button onclick = "newTechName()">Generate</button>
-    <p id ="nameDisplay">
-      @
-    </p>
+      <div class = "well well-sm">
+        <button onclick = "newTechName()">Generate</button>
+      <p id ="nameDisplay" class = "generated-name">
+        @
+      </p>
+      </div>
   </div>
+<br>
+<br>
+<div class = "footer-buttons-container">
+  <button class = "footer-buttons">Subscribe!</button>
+  <button class ="footer-buttons" a href= "https://www.reddit.com/r/techwearclothing">Reddit</button>
+  <button class ="footer-buttons">Gallery</button>
+  <button class ="footer-buttons">Clothing Reviews</button>
+</div>
 
+<footer>This Webpage is not 100% factual. The contents of this page are composed of my own personal opinions surrounding the Techwear clothing industry based on information gathered over time. The information on this page is not exhaustive. Any and all media displayed on this page are displayed for educational purposes and by no means generate any form of revenue.</footer>
 
-
-<footer>This Webpage is not 100% factual. The contents of this page are composed of my own personal opinions surrounding the Techwear clothing industry based on information gathered over time. The information on this page is not exhaustive. Any and all media displayed on this page are displayed for educational purposes and by no means generates any form of revenue.</footer>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-  </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
 <script src="boostrap/js/bootstrap.min.js"></script>
 
-  <script src="Jquery/glitch.jquery.js"></script>
-    <!--JQUERY Glitch IMPORTS-->
-  <script src="Jquery/jquery.textillate.js"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script type="text/javascript" src="techwear.js"></script>
+<script src="Jquery/glitch.jquery.js"></script>
+  <!--JQUERY Glitch IMPORTS-->
+<script src="Jquery/jquery.textillate.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script type="text/javascript" src="techwear.js"></script>
+
+
 
   </body>
 </html>
