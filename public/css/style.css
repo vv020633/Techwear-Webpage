@@ -28,10 +28,7 @@
     max-width: 50%;
   }
 }
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
+
 
 #nameDisplay{
   color: black;
@@ -39,6 +36,113 @@
 }
 .body{
 background-color:#12160a;
+}
+.box{
+  position: relative;
+   margin: auto;
+   display: block;
+   margin-top: 8%;
+   width: 600px;
+   height: 420px;
+   background: none;
+
+}
+.belt-left{
+  position: absolute;
+  top: 50%;
+  left: 12.5%;
+  width:32%;
+  height:10%;
+  background: #8C8C8C;
+  border-radius: 5%;
+  z-index:1;
+}
+
+.belt-left-buckle{
+  position: absolute;
+  top:-35%;
+  right:-10%;
+  width:20%;
+  height:170%;
+  background:black;
+  border-radius:50%;
+  z-index:3;
+
+  -webkit-clip-path: polygon(24% 0, 99% 25%, 100% 75%, 24% 100%);
+clip-path: polygon(24% 0, 99% 25%, 100% 75%, 24% 100%);
+}
+
+.belt-lock-circle{
+  position: absolute;
+  width: 20%;
+  height:50%;
+  left: -15%;
+  top: 25%;
+  background: #cdad00;
+  -webkit-clip-path: circle(50% at 50% 50%);
+clip-path: circle(50% at 50% 50%);
+z-index:2;
+}
+
+.belt-lock-main{
+  position: absolute;
+  top:-35%;
+  left:-10%;
+  width:20%;
+  height:170%;
+  background:black;
+  border-radius:30%;
+  z-index:3;
+  -webkit-clip-path: inset(5% 20% 0 10%);
+clip-path: inset(5% 20% 0 10%);
+}
+
+.belt-lock-trapezoid{
+  position: absolute;
+  width: 17%;
+  height:48%;
+  left: -16%;
+  top: 25%;
+  background: #cdad00;
+  -webkit-clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 70%);
+clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 70%);
+}
+
+.belt-right{
+  position: absolute;
+  top: 50%;
+  right:12.5%;
+  width:32%;
+  height:10%;
+  background: #8C8C8C;
+  border-radius: 5%;
+  z-index:1;
+}
+
+.belt-bottom-lock{
+  position: absolute;
+  z-index:2;
+  background: #cdad00;
+  bottom: -15%;
+  right:-13%;
+  width: 10%;
+  height: 20%;
+  border-radius: 30%;
+  -webkit-clip-path: polygon(100% 50%, 0 1%, 0 100%);
+clip-path: polygon(100% 50%, 0 1%, 0 100%);
+}
+
+.belt-top-lock{
+  position: absolute;
+  z-index: 2;
+  top: -15%;
+  right:-13%;
+  width: 10%;
+  height: 20%;
+  border-radius: 30%;
+  background: #cdad00;
+  -webkit-clip-path: polygon(100% 50%, 0 1%, 0 100%);
+  clip-path: polygon(100% 50%, 0 1%, 0 100%);
 }
 .brandscontainer{
   display: inline;
@@ -165,6 +269,7 @@ h2{
   color: white;
   text-align: center;
 }
+
 
 .heading{
   padding-top: 100px;
