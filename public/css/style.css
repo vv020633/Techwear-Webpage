@@ -138,6 +138,8 @@
 }
 .body{
 background-color:#12160a;
+
+
 }
 .box{
   position: relative;
@@ -309,6 +311,7 @@ height: 300px;
 
 .container{
   margin: auto;
+
   max-width: 800px;
   background-color:#12160a;
 }
