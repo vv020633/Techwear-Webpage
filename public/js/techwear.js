@@ -1,4 +1,4 @@
-var technames = ["Jedi", "Ninja", "Dark", "Equator", "Longing", "Turmoil", "Lowly", "Space", "Moon", "Villain", "Stare", "Hunch", "Lean", "Trouble", "Knight", "Midnight", "MidKnight", "Marauder", "Kek", "Summoner", "Axis", "Vortex", "Stream", "Edge", "Samurai", "Collector", "Bottomless", "Petrify", "Putrid", "Endower", "B-list", "Closed", "Detrimental", " Lucid", "Scheme", "Plot", "Orion", "Pluto", "Stardust", "Molten", "Erroding", "Crimson", "Nemesis"];
+var technames = ["Jedi", "Ninja", "Dark", "Equator", "Longing", "Turmoil", "Lowly", "Space", "Moon", "Villain", "Stare", "Hunch", "Lean", "Trouble", "Knight", "Midnight", "MidKnight", "Marauder", "Kek", "Summoner", "Axis", "Vortex", "Stream", "Edge", "Samurai", "Collector", "Bottomless", "Petrify", "Putrid", "Endower", "B-list", "Closed", "Detrimental", " Lucid", "Scheme", "Plot", "Orion", "Pluto", "Stardust", "Molten", "Erroding", "Crimson", "Nemesis", "Monochrome", "Onyx",];
                       /*---TechnName Generator function---*/
  function newTechName() {
 var randomNumber = Math.floor(Math.random() * (technames.length));
@@ -21,6 +21,7 @@ $(document).ready(function() {
     ScrollReveal().reveal('.brand-descr');
     ScrollReveal().reveal('.interactive-brands1');
     ScrollReveal().reveal('.interactive-brands2');
+    ScrollReveal().reveal('.flexbox-brands');
     ScrollReveal().reveal('.caption');
     ScrollReveal().reveal('.heading');
     ScrollReveal().reveal('.influence-pics');

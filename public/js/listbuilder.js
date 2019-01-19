@@ -1,9 +1,11 @@
 $(document).ready(function() {
-
+  
     var delay = 500; // milliseconds
     var cookie_expire = 0; // days
 
     var cookie = localStorage.getItem("list-builder");
+
+
     if(cookie == undefined || cookie == null) {
         cookie = 0;
     }
