@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  
+
     var delay = 500; // milliseconds
     var cookie_expire = 0; // days
 
@@ -24,6 +24,7 @@ $(document).ready(function() {
                     $("#popup-box-content").html("<p style='text-align: center'>Thank you for subscribing to The TechWear newsletter! Stay tuned for updates!</p>");
                 }
             });
+            
         });
 
         $("#popup-close").click(() => {

@@ -126,7 +126,7 @@
   25%{
     left:100px;
     right:100px;
-  
+
 
   }
   50%{
@@ -299,15 +299,30 @@ animation: rotation 3s ease-in-out infinite;
   -webkit-clip-path: polygon(100% 50%, 0 1%, 0 100%);
   clip-path: polygon(100% 50%, 0 1%, 0 100%);
   animation: negrotation 3s ease-in-out infinite;
-
-
-
 }
-.brandscontainer{
+
+
+.brands-container{
   display: inline;
+  vertical-align: middle;
+}
+.brand-items{
+margin-top:   15%;
+margin-bottom: 15%;
+}
+.brands{
   max-width: 100%;
 }
+.brands-photos{
 
+  border-radius: 25px;
+  border-style: solid;
+  border-width: thick;
+  border-color: #bbbbbb;
+  height: 200px;
+  width: auto;
+  float: left;
+}
 .caption{
   display: block;
   color: white;
@@ -353,29 +368,19 @@ height: 300px;
   max-width: 800px;
   background-color:#12160a;
 }
-/* flex items*/
-.flexbox-brands{
-display: flex;
-}
-.flexcontainer-2{
+.descriptcontainer{
 align-items: center;
 display: flex;
 margin-bottom: 300px;
 padding-top: 300px;
 }
-.flexcontainerbox-3{
-  flex-basis:70%;
-  font-size: 25px;
-  max-width: 10%;
-}
-.flexcontainerbox-4{
-  display: flex;
-}
-.flexlinks{
-margin-left: 20px;
-margin-right: 20px;
-padding: 0 20px;
-}
+
+
+  .flexlinks{
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0 20px;
+  }
 footer{
 background-color: #aaaaaa;
 color: white;
@@ -408,11 +413,19 @@ text-align: center;
   /*Animation */
   transition: transform .2s;
 }
+.gallery-enlarged{
+  height:60%;
+  width: auto;
+}
 
 .gallery:hover {
   /*120% zoom*/
   transform: scale(1.2);
   box-shadow: 0 0 7px rgba(0, 0 ,0 , 0.5);
+}
+
+.gallery:active {
+  transform: scale(3.3);
 }
 /*h3{
   color: white;
@@ -429,6 +442,12 @@ h2{
   color: white;
   text-align: center;
 }
+hr {
+background-color: white;
+  color: white;
+}
+
+
 
 
 .heading{
@@ -436,6 +455,10 @@ h2{
   text-align: center;
   color: white;
   font-family: 'Russo One', sans-serif;
+}
+
+.influencescontainer{
+  display: flex;
 }
 
 .influence-pics{
@@ -448,30 +471,6 @@ h2{
   height: auto;
 
 }
-.interactive-brands1{
-
-  border-radius: 25px;
-  border-style: solid;
-  border-width: thick;
-  border-color: #bbbbbb;
-  height: 80px;
-  margin-left: 40%;
-  margin-right: 25%;
-  width: 100px;
-  align-content: center;
-}
-.interactive-brands2{
-
-  border-radius: 25px;
-  border-style: solid;
-  border-width: thick;
-  border-color: #bbbbbb;
-  height: 80px;
-  margin-left: 35%;
-  margin-right: 45%;
-  width: 100px;
-  align-content: center;
-}
 
 #list-builder{
   position: fixed;
@@ -483,6 +482,8 @@ h2{
   filter: alpha(opacity=80); /* For IE8 and earlier */
   opacity: 0.8;
   display: none;
+  z-index: 22;
+
 }
 
 
@@ -539,6 +540,7 @@ h2{
   padding: 30px;
   border: 10px solid  #f2ffe6;
   display: none;
+  z-index: 24;
 }
 
 #popup-close{
@@ -637,8 +639,13 @@ text-align: center !important;
   background-color: #333;
   overflow: hidden;
   display: flex;
+  flex-direction: row;
+  position: sticky;
+  top:0;
+  z-index: 15;
 
 }
+
 .topnav a{
 
   color: white;

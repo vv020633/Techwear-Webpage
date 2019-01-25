@@ -1,8 +1,8 @@
-var technames = ["Jedi", "Ninja", "Dark", "Equator", "Longing", "Turmoil", "Lowly", "Space", "Moon", "Villain", "Stare", "Hunch", "Lean", "Trouble", "Knight", "Midnight", "MidKnight", "Marauder", "Kek", "Summoner", "Axis", "Vortex", "Stream", "Edge", "Samurai", "Collector", "Bottomless", "Petrify", "Putrid", "Endower", "B-list", "Closed", "Detrimental", " Lucid", "Scheme", "Plot", "Orion", "Pluto", "Stardust", "Molten", "Erroding", "Crimson", "Nemesis", "Monochrome", "Onyx",];
+const technames = ["Jedi", "Ninja", "Dark", "Equator", "Longing", "Turmoil", "Lowly", "Space", "Moon", "Villain", "Stare", "Hunch", "Lean", "Trouble", "Knight", "Midnight", "MidKnight", "Marauder", "Kek", "Summoner", "Axis", "Vortex", "Stream", "Edge", "Samurai", "Collector", "Bottomless", "Petrify", "Putrid", "Endower", "B-list", "Closed", "Detrimental", " Lucid", "Scheme", "Plot", "Orion", "Pluto", "Stardust", "Molten", "Erroding", "Crimson", "Nemesis", "Monochrome", "Onyx",];
                       /*---TechnName Generator function---*/
  function newTechName() {
-var randomNumber = Math.floor(Math.random() * (technames.length));
-var randomNumber2 = Math.floor(Math.random() * (technames.length));
+let randomNumber = Math.floor(Math.random() * (technames.length));
+let randomNumber2 = Math.floor(Math.random() * (technames.length));
 
 if (randomNumber === randomNumber2)
   {
@@ -10,9 +10,6 @@ if (randomNumber === randomNumber2)
   }
 document.getElementById('nameDisplay').innerHTML = '@' + technames[randomNumber] +  ' ' + technames[randomNumber2];
 };
-
-
-
 
 
 $(document).ready(function() {
@@ -28,6 +25,10 @@ $(document).ready(function() {
     ScrollReveal().reveal('.gallery');
 
 
+$("gallery").click(function(){
+
+})
+
 
                   /*Glitch Functions*/
   $("#title").glitch({bg: '#35493D' , minint:1, maxint:3, maxglitch:15, hoffset:10, voffset:3, direction:'random'});
@@ -36,9 +37,7 @@ $(document).ready(function() {
   $("#errglitch").glitch({bg: '#35493D' , minint:1, maxint:3, maxglitch:15, hoffset:10, voffset:3, direction:'random'});
   $("#jenglitch").glitch({bg: '#35493D' , minint:1, maxint:3, maxglitch:15, hoffset:10, voffset:3, direction:'random'});
   $("#nameDisplay").glitch({bg: '#35493D' , minint:1, maxint:3, maxglitch:7, hoffset:5, voffset:3, direction:'random'});
+  $("a.flexlinks").glitch({ minint:1, maxint:3, maxglitch:10, hoffset:10, voffset:3, direction:'horizontal'});
+  $("h3.brand-names").glitch({ minint:1, maxint:3, maxglitch:10, hoffset:10, voffset:3, direction:'horizontal'});
 
-                /*Glitch on hover*/
-$('a.flexlinks').hover(function(){
-  $(this).glitch({bg: '#35493D' , minint:1, maxint:3, maxglitch:10, hoffset:10, voffset:3, direction:'horizontal'});
-  });
 });
